@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>one</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Test</h1>
+    <canvas id="canvas"></canvas>
+
+    <script>
+      const json_str =
+        '{"page_width": 595, "page_height": 842, "data_list": [{"text": "Technical Account Willis Limited B080115865H17 / XOL QS Treaty [Received]", "bbox": {"x": 10.0, "y": 778.415, "w": 415.6649999999999, "h": 31.601}}, {"text": "1 Technical Account from Mark Browning [Mark_Browning@ajgre.com / +44 1473 207176]", "bbox": {"x": 10.0, "y": 757.026, "w": 301.7819999999999, "h": 12.0}}, {"text": "Cedant / Insured", "bbox": {"x": 22.75, "y": 737.478, "w": 52.29000000000002, "h": 7.0}}, {"text": "Arch Reinsurance Limited", "bbox": {"x": 106.75, "y": 737.6410000000001, "w": 86.744, "h": 7.0}}, {"text": "Contract Name", "bbox": {"x": 22.75, "y": 721.688, "w": 46.06, "h": 7.0}}, {"text": "Treaty FAC", "bbox": {"x": 22.75, "y": 705.888, "w": 33.999, "h": 7.0}}, {"text": "N/A", "bbox": {"x": 106.75, "y": 721.841, "w": 12.054000000000002, "h": 7.0}}, {"text": "Treaty", "bbox": {"x": 106.75, "y": 706.041, "w": 21.00699999999999, "h": 7.0}}, {"text": "Created", "bbox": {"x": 308.34, "y": 737.478, "w": 23.95399999999995, "h": 7.0}}, {"text": "Received", "bbox": {"x": 308.34, "y": 721.688, "w": 27.55899999999997, "h": 7.0}}, {"text": "Due", "bbox": {"x": 308.34, "y": 705.888, "w": 12.326999999999998, "h": 7.0}}, {"text": "11 Aug 2022", "bbox": {"x": 392.34, "y": 737.6410000000001, "w": 40.851999999999975, "h": 7.0}}, {"text": "11 Aug 2022 23:07", "bbox": {"x": 392.34, "y": 721.841, "w": 60.697, "h": 7.0}}, {"text": "31 Aug 2022", "bbox": {"x": 392.34, "y": 706.041, "w": 40.851999999999975, "h": 7.0}}, {"text": "Contract Nature", "bbox": {"x": 22.75, "y": 690.088, "w": 48.944, "h": 7.0}}, {"text": "Proportional", "bbox": {"x": 106.75, "y": 690.2410000000001, "w": 41.61500000000001, "h": 7.0}}, {"text": "Schema Version", "bbox": {"x": 308.34, "y": 690.088, "w": 49.216999999999985, "h": 7.0}}, {"text": "2016-10", "bbox": {"x": 392.34, "y": 690.2410000000001, "w": 25.682999999999993, "h": 7.0}}, {"text": "Cover Type", "bbox": {"x": 22.75, "y": 674.288, "w": 34.979000000000006, "h": 7.0}}, {"text": "Proportional Treaty", "bbox": {"x": 106.75, "y": 674.451, "w": 64.56800000000001, "h": 7.0}}, {"text": "Contract Period", "bbox": {"x": 308.34, "y": 674.288, "w": 47.480999999999995, "h": 7.0}}, {"text": "01 Jan 2017 - 31 Dec 2017", "bbox": {"x": 392.34, "y": 674.451, "w": 85.61000000000001, "h": 7.0}}, {"text": "Class of Business", "bbox": {"x": 22.75, "y": 658.4879999999999, "w": 52.661, "h": 7.0}}, {"text": "Marine", "bbox": {"x": 106.75, "y": 658.6510000000001, "w": 22.561000000000007, "h": 7.0}}, {"text": "Underwriter Share %", "bbox": {"x": 308.34, "y": 658.4879999999999, "w": 65.26799999999997, "h": 7.0}}, {"text": "10.0000000", "bbox": {"x": 392.34, "y": 658.6510000000001, "w": 36.97399999999999, "h": 7.0}}, {"text": "Transaction Type", "bbox": {"x": 22.75, "y": 642.688, "w": 53.108999999999995, "h": 7.0}}, {"text": "Account Statement", "bbox": {"x": 106.75, "y": 642.851, "w": 63.78400000000002, "h": 7.0}}, {"text": "Broker Reference", "bbox": {"x": 308.34, "y": 642.688, "w": 53.249000000000024, "h": 7.0}}, {"text": "15865H17-000085TTY-669371632", "bbox": {"x": 392.34, "y": 642.851, "w": 108.56299999999999, "h": 7.0}}, {"text": "Underwriter Year", "bbox": {"x": 22.75, "y": 626.898, "w": 52.486000000000004, "h": 7.0}}, {"text": "2017", "bbox": {"x": 106.75, "y": 627.051, "w": 15.567999999999998, "h": 7.0}}, {"text": "Accounting Period Start", "bbox": {"x": 22.75, "y": 611.098, "w": 72.38, "h": 7.0}}, {"text": "01 Apr 2022", "bbox": {"x": 106.75, "y": 611.2510000000001, "w": 39.298, "h": 7.0}}, {"text": "Accounting Period End", "bbox": {"x": 22.75, "y": 595.298, "w": 69.307, "h": 7.0}}, {"text": "30 Jun 2022", "bbox": {"x": 106.75, "y": 595.451, "w": 39.69, "h": 7.0}}, {"text": "Section Reference", "bbox": {"x": 308.34, "y": 626.898, "w": 55.559000000000026, "h": 7.0}}, {"text": "Quota Share Reinsurance", "bbox": {"x": 392.34, "y": 627.051, "w": 85.582, "h": 7.0}}, {"text": "U/w Contract Reference", "bbox": {"x": 308.34, "y": 611.098, "w": 73.745, "h": 7.0}}, {"text": "XOL QS Treaty", "bbox": {"x": 392.34, "y": 611.2510000000001, "w": 49.406000000000006, "h": 7.0}}, {"text": "Underwriter", "bbox": {"x": 308.34, "y": 595.298, "w": 36.39999999999998, "h": 7.0}}, {"text": "Seoul Guarantee Insurance Company", "bbox": {"x": 392.34, "y": 595.451, "w": 124.48100000000005, "h": 7.0}}, {"text": "Address", "bbox": {"x": 308.34, "y": 557.158, "w": 24.36700000000002, "h": 7.0}}, {"text": "DRI Enabled Please send Claims", "bbox": {"x": 392.34, "y": 579.821, "w": 108.54199999999997, "h": 7.0}}, {"text": "Supporting Documents for Claims Settlement", "bbox": {"x": 392.34, "y": 564.821, "w": 151.29800000000006, "h": 7.0}}, {"text": "only, to DRI Team", "bbox": {"x": 392.34, "y": 549.821, "w": 59.122000000000014, "h": 7.0}}, {"text": "KOREA, REPUBLIC OF", "bbox": {"x": 392.34, "y": 534.821, "w": 76.61500000000001, "h": 7.0}}, {"text": "Broker Address", "bbox": {"x": 308.34, "y": 511.688, "w": 46.676000000000045, "h": 7.0}}, {"text": "KINGDOM", "bbox": {"x": 392.34, "y": 504.341, "w": 33.83100000000002, "h": 7.0}}, {"text": "51 Lime Street London EC3M 7DQ UNITED", "bbox": {"x": 392.34, "y": 519.341, "w": 141.19, "h": 7.0}}, {"text": "2 Account Information", "bbox": {"x": 10.0, "y": 465.98499999999996, "w": 80.122, "h": 15.0}}, {"text": "Balance Amount", "bbox": {"x": 22.75, "y": 446.448, "w": 50.04299999999999, "h": 7.0}}, {"text": "-223.37 USD", "bbox": {"x": 106.75, "y": 446.601, "w": 40.46000000000001, "h": 7.0}}, {"text": "Amt Share Indicator", "bbox": {"x": 308.34, "y": 446.448, "w": 61.956999999999994, "h": 7.0}}, {"text": "Receiver\'s share", "bbox": {"x": 392.34, "y": 446.601, "w": 55.363, "h": 7.0}}, {"text": "Description", "bbox": {"x": 38.39, "y": 429.461, "w": 38.507000000000005, "h": 7.0}}, {"text": "profit commission", "bbox": {"x": 37.64, "y": 410.991, "w": 54.453, "h": 7.0}}, {"text": "premium", "bbox": {"x": 37.64, "y": 391.51099999999997, "w": 27.223, "h": 7.0}}, {"text": "reinsurance commission", "bbox": {"x": 37.64, "y": 372.041, "w": 75.46000000000001, "h": 7.0}}, {"text": "brokerage", "bbox": {"x": 37.64, "y": 352.561, "w": 31.513999999999996, "h": 7.0}}, {"text": "Amount Currency", "bbox": {"x": 304.36, "y": 429.461, "w": 66.17000000000002, "h": 7.0}}, {"text": "Status", "bbox": {"x": 419.42, "y": 429.461, "w": 21.391999999999996, "h": 7.0}}, {"text": "-183.00 US Dollar  (USD)", "bbox": {"x": 307.82, "y": 410.991, "w": 84.507, "h": 7.0}}, {"text": "13.56 US Dollar  (USD)", "bbox": {"x": 314.04, "y": 391.51099999999997, "w": 78.28699999999998, "h": 7.0}}, {"text": "-1.59 US Dollar  (USD)", "bbox": {"x": 315.6, "y": 372.041, "w": 76.72699999999998, "h": 7.0}}, {"text": "-.34 US Dollar  (USD)", "bbox": {"x": 319.49, "y": 352.561, "w": 72.83699999999999, "h": 7.0}}, {"text": "current payment losses for the contract", "bbox": {"x": 37.64, "y": 333.091, "w": 120.99499999999996, "h": 7.0}}, {"text": "-52.00 US Dollar  (USD)", "bbox": {"x": 311.71, "y": 333.091, "w": 80.61700000000002, "h": 7.0}}, {"text": "outstanding loss for the contract after retention", "bbox": {"x": 37.64, "y": 313.611, "w": 144.35399999999998, "h": 7.0}}, {"text": "-93,957.00 US Dollar  (USD)", "bbox": {"x": 298.09, "y": 313.611, "w": 94.23700000000002, "h": 7.0}}, {"text": "informational", "bbox": {"x": 418.67, "y": 313.611, "w": 40.067999999999984, "h": 7.0}}, {"text": "3Brokerage", "bbox": {"x": 10.0, "y": 274.265, "w": 42.962, "h": 15.0}}, {"text": "4Territories", "bbox": {"x": 10.0, "y": 197.205, "w": 42.962, "h": 15.0}}, {"text": "No detail to display", "bbox": {"x": 17.5, "y": 179.868, "w": 59.087, "h": 7.0}}, {"text": "Percentage Basis", "bbox": {"x": 155.38, "y": 255.031, "w": 65.406, "h": 7.0}}, {"text": "Description", "bbox": {"x": 352.03, "y": 255.031, "w": 38.507000000000005, "h": 7.0}}, {"text": "2.5000000 Gross Premium", "bbox": {"x": 160.78, "y": 236.56099999999998, "w": 89.195, "h": 7.0}}]}';
+      const result_obj = JSON.parse(json_str);
+      console.log(result_obj.data_list.length);
+
+      const canvas = document.getElementById("canvas");
+      canvas.width = result_obj.page_width;
+      canvas.height = result_obj.page_height;
+
+      const ctx = canvas.getContext("2d");
+      ctx.beginPath();
+
+      result_obj.data_list.forEach((element) => {
+        console.log(element.bbox.x);
+        ctx.rect(
+          element.bbox.x,
+          element.bbox.y,
+          element.bbox.w,
+          element.bbox.h
+        );
+
+        ctx.font = "10px Arial";
+        ctx.fillText(element.text, element.bbox.x, element.bbox.y + 10);
+      });
+
+      ctx.stroke();
+    </script>
+  </body>
+</html>
